@@ -1,161 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>Reebok Shoes</title>
+    <!-- <link rel="stylesheet" href="styles.css"> -->
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
+        /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
 
-        .nav1 {
-            display: flex;
-            background-color: #0c0c0c;
-            color: white;
-            padding: 0px 20px;
-            /* border:4px solid #ff0000; */
-            align-items: center;
-
-        }
-
-        .navbar-icons {
-            height: 100%;
-            display: flex;
-            /* border: 2px solid black; */
-            justify-content: space-between;
-            width: 1200px;
-            margin-left: 800px;
-        }
-
-        .more {
-            display: inline-block;
-            /* border: 3px solid rgb(0, 30, 255); */
-            width: 150px;
-        }
-
-        .store {
-            display: flex;
-            align-items: center;
-            width: 85px;
-            justify-content: space-between;
-        }
-
-        .navbar-icons> :nth-child(2) {
-            display: flex;
-            align-items: center;
-            width: 120px;
-            justify-content: space-between;
-        }
-
-        .navbar-icons> :nth-child(3) {
-            display: flex;
-            align-items: center;
-            width: 85px;
-            justify-content: space-between;
-        }
-
-        .navbar-icons> :nth-child(4) {
-            display: flex;
-            width: 150px;
-            align-items: center;
-            justify-content: center;
-            justify-content: space-between;
-            justify-content: space-evenly;
-            /* border: 2px solid brown; */
-        }
-
-        .navbar-icons> :nth-child(4) img {
-            height: 30px;
-            width: 30px;
-        }
-
-        .nav2 {
-            display: flex;
-            background-color: hsl(0, 20%, 96%);
-            color: #0c0b0b;
-            padding: 0px 20px;
-            /* border:4px solid #00ff00; */
-            align-items: center;
-        }
-
-        .banner1l {
-            display: flex;
-            /* border:2px solid magenta; */
-            align-items: center;
-            justify-content: space-between;
-            width: 65%;
-        }
+.nav1 {
+    display:flex;
+    background-color: #0c0c0c;
+    color: white;
+    padding: 0px 20px;
+    /* border:4px solid #ff0000; */
+    align-items: center;
+   
+}
+.navbar-icons{
+    height: 100%;
+    display: flex;
+    /* border: 2px solid black; */
+    justify-content: space-between;
+    width: 1200px;
+    margin-left: 800px;
+}
+.more {
+    display:inline-block;
+    /* border: 3px solid rgb(0, 30, 255); */
+    width: 150px;
+}
+.store{
+    display: flex;
+    align-items: center;
+    width: 85px;
+    justify-content: space-between;
+}
+.navbar-icons > :nth-child(2){
+    display: flex;
+    align-items: center;
+    width: 120px;
+    justify-content: space-between;
+}
+.navbar-icons > :nth-child(3){
+    display: flex;
+    align-items: center;
+    width: 85px;
+    justify-content: space-between;
+}
+.navbar-icons > :nth-child(4){
+    display: flex;
+    width: 150px;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    justify-content: space-evenly;
+    /* border: 2px solid brown; */
+}
+.navbar-icons > :nth-child(4) img{
+    height: 30px;
+    width: 30px;
+}
+.nav2 {
+    display:flex;
+    background-color: hsl(0, 20%, 96%);
+    color: #0c0b0b;
+    padding: 0px 20px;
+    /* border:4px solid #00ff00; */
+    align-items: center;
+}
+.banner1l{
+    display: flex;
+    /* border:2px solid magenta; */
+    align-items: center;
+    justify-content: space-between;
+    width: 65%;
+}
 
 
-        .banner1l p:hover {
-            color: #dc0d0d;
-            /* Change text color on hover */
-            cursor: pointer;
-        }
-
-        .banner1l img {
-            height: 40px;
-        }
-
-        .banner2r {
-            display: flex;
-            padding-left: 5%;
-            width: 40%;
-            /* border: 2px solid goldenrod; */
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .info {
+.banner1l p:hover {
+    color: #dc0d0d; /* Change text color on hover */
+    cursor: pointer;
+}
+.banner1l img{
+    height: 40px;
+}
+.banner2r{
+    display: flex;
+    padding-left: 5%;
+    width: 40%;
+    /* border: 2px solid goldenrod; */
+    align-items: center;
+    justify-content: space-between;
+}
+.info {
             display: flex;
             flex-direction: column;
             background: #ff0000;
             padding: 4px;
         }
+.search-wrapper input{
+    height: 30px;
+    width: 250px;
+    border: none;
+}
 
-        .search-wrapper input {
-            height: 30px;
-            width: 250px;
-            border: none;
-        }
+
+main {
+    padding: 20px;
+}
+
+.products {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-right: 30px;
+}
+
+.product-card {
+    border: 1px solid #ddd;
+    padding: inline;
+    width: 22%;
+    text-align: center;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.product-card h3 {
+    font-size: 1.2em;
+    margin: 0;
+    padding: 0;
+}
+
+.product-card p {
+    color: #ff0000;
+    font-weight: bold;
+    font-size: 1.1em;
+}
     </style>
 </head>
-
 <body>
     <nav class="nav1">
         <div class="more">
-            <p>MORE <span>v</span></p>
+            <p>MORE <span>v</span></p>  
         </div>
-        <div class="navbar-icons">
-            <div class="store">
-                <i class="fa-solid fa-location-dot"></i>
-                <p>STORES</p>
+        <div class="navbar-icons"> 
+           <div class="store">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>STORES</p>
+           </div>
+           <div>
+            <i class="fa-solid fa-user"></i>
+            <p>CONTACT US</p>
+           </div>
+           <div>
+           <i class="fa-solid fa-user"></i>
+           <p>LOG IN</p>
             </div>
-            <div>
-                <i class="fa-solid fa-user"></i>
-                <p>CONTACT US</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-user"></i>
-                <p>LOG IN</p>
-            </div>
-            <div>
-                <i class="fa-solid fa-heart fa-2xl"></i>
-                <i class="fa-solid fa-bag-shopping fa-2xl"></i>
-                <img src="https://wash4work.org/wp-content/uploads/sites/20/2022/09/Aditya-Birla-Group-Logo-Vector-600x600-1.jpg"
-                    alt="aditya birla logo">
-            </div>
+           <div>
+            <i class="fa-solid fa-heart fa-2xl"></i>
+            <i class="fa-solid fa-bag-shopping fa-2xl"></i>
+            <img src="https://wash4work.org/wp-content/uploads/sites/20/2022/09/Aditya-Birla-Group-Logo-Vector-600x600-1.jpg" alt="aditya birla logo">
+           </div>
         </div>
     </nav>
     <nav class="nav2">
         <div class="banner1l">
-            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8axoioESKysbI8-Yr3BlYpVIdPuOCnv6t-_SHQsAU0CNZa7iG"
-                alt="Reebok">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcQ8axoioESKysbI8-Yr3BlYpVIdPuOCnv6t-_SHQsAU0CNZa7iG" alt="Reebok">
             <p>NEW</p>
             <p>ICONS</p>
             <p>MEN WOMEN SPORTS</p>
@@ -172,6 +198,33 @@
             </div>
         </div>
     </nav>
+    <main>
+        <section class="products">
+            <div class="product-card">
+               
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSM_ApFboCYI2ZBSHk7xl8O-38icYHvn6-i56tAZlqQVwu8FkdQ" alt="Reebok Women NFX Trainer" >
+                <h3>Reebok Women NFX Trainer</h3>
+                <p>₹7,599</p>
+            </div>
+            <div class="product-card">
+               
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcSrj5O4GLSsgaqTGbPw2WWGB01RcMvZnr6AGBMj5Ry7VgHzzU6A" alt="Reebok Women Club C 85 W">
+                <h3>Reebok Women Club C 85 W</h3>
+                <p>₹6,999</p>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcR_1ldWJoVhrtZaJRpfS3HL31tfewTDDLKV6pqGjUM4OfNTdUKo" alt="Reebok Women Energen Plus 2">
+                <h3>Reebok Women Energen Plus 2</h3>
+                <p>₹6,999</p>
+            </div>
+            <div class="product-card">
+                <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSb-wa_f4x-HO-Nm8erNuQ80ae6Y4FkaQ5hs0hq881yB16dhUx1" alt="Reebok Unisex Classic Leather">
+                <h3>Reebok Unisex Classic Leather</h3>
+                <p>₹7,999</p>
+            </div>
+        </section>
+    </main>
 </body>
-
+<script src="https://kit.fontawesome.com/e00874c0a2.js" crossorigin="anonymous"></script>
 </html>
+
